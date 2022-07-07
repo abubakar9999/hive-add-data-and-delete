@@ -78,6 +78,7 @@ class _HomePageState extends State<HomePage> {
             ElevatedButton(onPressed: (){
               setState(() {
               getData();
+              _controller.clear();
              
               });
          
