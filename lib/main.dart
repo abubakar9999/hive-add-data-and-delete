@@ -6,7 +6,7 @@ void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   final appderocctory= await getApplicationSupportDirectory();
   Hive.init(appderocctory.path);
-  Hive.openBox("StudentBox");
+Box box=await  Hive.openBox("StudentBox");
   
   runApp(const MyApp());
 }
